@@ -6,6 +6,7 @@ int main(){
     p = &x;
     cout<<&x<<endl; // TO FIND ADDRESS OF DATATYPE
     cout<<p<<endl;  // TO FIND ADDRESS OF DATATYPE
-    cout<<*p<<endl; // TO print  value of variable
+    cout<<*p<<endl; // TO print  value of variable, *p = d ereference operator
     cout<<x<<endl;  // TO print  value of variable
+    cout<<&p<<endl;
 }
