@@ -7,5 +7,8 @@ void print(int n){
     
 }
 int main(){
-    print(10);
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    print(n);
 }
