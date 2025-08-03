@@ -1,13 +1,16 @@
 #include<iostream>
 using namespace std;
-int product(int n){
-    if(n==1) return 1;
-    return n * product(n-1); 
-
+int pow(int a, int b){
+    if(b==0) return 1;
+    return a * pow(a,b-1);
 }
+
 int main(){
-    int n;
-    cout<<"enter n: ";
-    cin>>n;
-    cout<<product(n);
+    int a;
+    cout<<"enter a: ";
+    cin>>a;
+     int b;
+    cout<<"enter b: ";
+    cin>>b;
+    cout<<pow(a,b);
 }
