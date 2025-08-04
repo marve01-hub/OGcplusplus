@@ -1,14 +1,16 @@
 #include<iostream>
 using namespace std;
-void fibo(int n){
-    if(n==0) return; 
-    fibo(n-1);     
-    cout<<n<<endl;  
+int pow(int a, int b){
+    if(b==0) return 1;
+    return a * pow(a,b-1);
 }
 
 int main(){
-    int n;
-    cout<<"Enter n : ";
-    cin>>n;
-    fibo(n);
+    int a;
+    cout<<"enter a: ";
+    cin>>a;
+     int b;
+    cout<<"enter b: ";
+    cin>>b;
+    cout<<pow(a,b);
 }
