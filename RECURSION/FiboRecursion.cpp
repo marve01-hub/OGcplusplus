@@ -1,16 +1,13 @@
 #include<iostream>
 using namespace std;
-int pow(int a, int b){
-    if(b==0) return 1;
-    return a * pow(a,b-1);
+int fibo(int n){
+    if(n==1 or n==2) return 1;   // ****
+    return fibo(n-1) + fibo(n-2);
 }
 
 int main(){
-    int a;
-    cout<<"enter a: ";
-    cin>>a;
-     int b;
-    cout<<"enter b: ";
-    cin>>b;
-    cout<<pow(a,b);
+    int n;
+    cout<<"enter n: ";
+    cin>>n;
+    cout<<fibo(n);
 }
