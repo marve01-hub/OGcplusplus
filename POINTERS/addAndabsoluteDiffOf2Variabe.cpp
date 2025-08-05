@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void val(int *a, int *b){       //**************
-    int sum = *a + *b;          //***************
-    int diff = abs(*a - *b);   // *******************
-    *a = sum;                //************** 
-    *b = diff;               // ************* 
+void val(int *a, int *b){        //*********
+    int sum = *a + *b;          //*********
+    int diff = abs(*a - *b);   //*********
+    *a = sum;                 //********* 
+    *b = diff;               //********* 
 } 
 
 int main(){
