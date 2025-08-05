@@ -2,7 +2,10 @@
 using namespace std;
 int powlog(int a, int b){
     if(b==1) return a;
-    else if(b%2==0)  return powlog(a,b/2) * powlog(a,b/2);
+    if(b==0) return 0;
+    int x = powlog(a,b/2);
+    int RecAns = x * x;
+    return RecAns ;
     
     
 }
