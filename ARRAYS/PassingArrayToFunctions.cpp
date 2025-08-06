@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void change(int arr[]){
+void change(int arr[]){ // way to recieve array
     arr[0] = 7;
 }
 int main(){
