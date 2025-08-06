@@ -1,1 +1,0 @@
-int size = 10, b[size];
