@@ -5,7 +5,8 @@ int main(){
    int n = sizeof(arr)/4; // no of integers
    int mx = arr[0];       //started from 0th index
    for(int i = 0; i<n;i++){
-       if(arr[i]>mx) mx = arr[i]; // *********
+    //    if(arr[i]>mx) mx = arr[i]; // *********
+    mx = max(mx,arr[i]);
    }
    cout<<mx;
 }
