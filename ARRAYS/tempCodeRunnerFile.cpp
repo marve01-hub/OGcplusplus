@@ -1,3 +1,1 @@
-for(int i = 1; i<=n;i++){
-    //     cout<<arr[i];
-    // }
+    // arr[i] *= 2;
