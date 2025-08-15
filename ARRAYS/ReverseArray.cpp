@@ -6,7 +6,6 @@ int main(){
     for(int i = 0; i < n; i++){
         cout<<a[i]<<" ";
     }
-  
         // REVERSE
     int i = 0; //  start
     int j = n-1; // end
@@ -21,7 +20,5 @@ int main(){
     cout<<endl;
     for(int i = 0; i < n; i++){
         cout<<a[i]<<" ";
-    }
-  
-    
+    } 
 }
