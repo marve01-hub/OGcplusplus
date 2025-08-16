@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[5][4] = {1,2,3,4,1,2,3,4,1,3,7,1,1,4,2,3,4,5,9,6};
+    int arr[5][4] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
     // int x1,y1,x2,y2;
     // x1 = 0; // i ki inisialization
     // y1 = 0; // j ki inisialization
