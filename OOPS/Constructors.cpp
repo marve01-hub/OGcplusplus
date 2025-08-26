@@ -21,7 +21,8 @@ public:
 
 int main() {
     Student s1("Parteek Marve",1330,8.5);
-
+    s1.rnumber = 2175;
+    
     Student s2;
     s2.name = "Parteek Marve";
     s2.rnumber = 1398;
