@@ -23,7 +23,7 @@ public:
 int main(){
     Cricketer c1("Kl Rahul", 9000,45.2);
 
-    c1.print(20000);
+    c1.print(20000);  //  dot operator se function call , parameter value giving to a function kar sakte hai,bake objectr too hote hi hai 
 
     cout<<c1.matches()<<endl;    // cout bcz function ki datatype int hai
 }
