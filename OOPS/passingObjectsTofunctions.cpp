@@ -11,14 +11,14 @@ void details(Car c){
     cout<<c.name<<" "<<c.price<<" "<<c.seats<<endl;
 }
 
-// void change(Car c1){   // PASS BY VALUE
-//     c1.name = "Lambo";
-// }
-
-
-void change2(Car& c1){  // PASS BY REFERENCE
+void change(Car c1){   // PASS BY VALUE
     c1.name = "Lambo";
 }
+
+
+// void change2(Car& c1){  // PASS BY REFERENCE
+//     c1.name = "Lambo";
+// }
 int main() {
     Car c1;  // DECLARATION
     c1.name = "Lamborghini";   //  WAY TO INITIALIZAION
@@ -31,8 +31,8 @@ int main() {
     // c2.seats = 2;
 
     details(c1);
-    // change(c1);   // PASS BY VALUE 
-    change2(c1);     // PASS BY REFERNCE
+    change(c1);   // PASS BY VALUE 
+    // change2(c1);     // PASS BY REFERNCE
     details(c1);
     // details(c2);
     // cout<<c1.name<<" "<<c1.price<<" "<<c1.seats<<endl;
