@@ -2,7 +2,7 @@
 using namespace std;
 
 void val(int *a, int *b){        //*********
-    int sum = *a + *b;          //*********
+    int sum = *a + *b;   // int sum = value of a + value of b    
     int diff = abs(*a - *b);   //*********
     *a = sum;                 //********* 
     *b = diff;               //********* 
