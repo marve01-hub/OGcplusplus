@@ -8,6 +8,6 @@ int main(){
     int n = s.length();
     // reverse(s.begin(), s.begin()+n/2);
     //  cout<<s<<endl;
-     reverse(s.begin()+2, s.begin()+5);
+     reverse(s.begin()+0, s.begin()+8);
      cout<<s<<endl;
 }
