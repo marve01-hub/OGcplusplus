@@ -12,7 +12,7 @@ public:
         average = avg;
     }    
     void print(int runs) {
-        cout<<name << "->" <<this->runs << " " << average << " ";
+        cout<<name << "->" <<this->runs << " " << average << " "; //  use of this keyword{->}
     }                           // CAN CREATE ANY NUMBER OF FUNCTIONS
 
     int matches(){
