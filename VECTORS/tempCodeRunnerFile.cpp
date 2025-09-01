@@ -1,4 +1,1 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-int main(){
+v1.swap(v2);
