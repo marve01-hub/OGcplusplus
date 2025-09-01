@@ -28,8 +28,3 @@ int main(){
      p1-> runs = 87345;
      cout<<p1->runs;
     }
-
-
-
-
-
