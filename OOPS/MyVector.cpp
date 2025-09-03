@@ -8,7 +8,7 @@ public:
 
     // above are initialized by a Default Constructor
     Vector(){
-        size = 0;
+        size = 0;                                   // INITIALIZATION
         capacity = 1;
         arr  = new int[capacity]; // an array of size 1
     }
