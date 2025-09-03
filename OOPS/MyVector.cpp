@@ -12,8 +12,8 @@ public:
         capacity = 1;
         arr  = new int[capacity]; // an array of size 1
     }
-
-    void add(int element) {
+ 
+   void add(int element) {
         if(size==capacity) {
             capacity *= 2;  // for capacity
             int* arr2 = new int{capacity}; //  TO make  Vector
