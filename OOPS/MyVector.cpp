@@ -32,6 +32,18 @@ public:
             }
             cout<<endl;
     }
+
+    int index(int idx){
+        if(size==0){
+            cout<<"Array is Empty";
+            return -1;
+        }
+        if(idx>=size || idx<0){
+            cout<<"INvalid Index";
+            return -1;
+        }
+        return arr[idx];
+    }
     void remove() {     // Size Decreased
         if(size==0) {
             cout<<"Array is Empty";
@@ -50,4 +62,5 @@ int main() {
     v.print();
     v.remove(); // decresed size
     v.print();
+    cout<<v.index(1)<<endl;
 }
