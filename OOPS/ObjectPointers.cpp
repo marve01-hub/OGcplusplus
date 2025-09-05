@@ -17,6 +17,8 @@ public:
     }
            
 int main(){
+    /* `Cricketer c1` is creating an object of the class `Cricketer` named `c1` with the values "Kl
+    Rahul" for name, 9000 for runs, and 45.2 for average. */
     Cricketer c1("Kl Rahul", 9000,45.2);
     // cout<<c1.runs<<endl;
     // change(&c1);
