@@ -12,6 +12,7 @@ public:
     }
 
     Vehicle(string name,float mileage, int topspeed, string fuelType) {
+        this->name = name;
         this->mileage = mileage;
         this->topspeed = topspeed;
         this->fuelType = fuelType;
@@ -20,31 +21,28 @@ public:
 
 class TwoWheeler : public Vehicle {   // CHILD CLASS   
 public:       
-    string name;
+    TwoWheeler(string name, float mileage, int topspeed, string fuelType) : Vehicle(name, mileage, topspeed, fuelType) {}  // Constructor chaining
 };
 
 class FourWheeler : public Vehicle {  // CHILD CLASS   
 public:       
-    string name;
+    FourWheeler(string name, float mileage, int topspeed, string fuelType) : Vehicle(name, mileage, topspeed, fuelType) {}  // Constructor chaining
 };
 
 class Bike : public TwoWheeler {  // GRAND CHILD CLASS   
 public:        
-    string name;
+     Bike(string name,float mileage, int topspeed, string fuelType)
+        : TwoWheeler(name, mileage, topspeed, fuelType) {}
 }; 
 
 class Car : public FourWheeler { // GRAND CHILD CLASS   
 public:        
-    string name;
+    Car(string name, float mileage, int topspeed, string fuelType) : FourWheeler(name, mileage, topspeed, fuelType) {}  // Constructor chaining
 };
 
 int main() {
     Car c("Tesla", 25, 250, "Electric");
-    
-    Bike b;
-     
-    
-
+    Bike b("Harley", 15, 180, "Gasoline");
     c.display();
     b.display();
 }
