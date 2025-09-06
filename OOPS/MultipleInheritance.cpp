@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class Cricketer{ //! parent class
+class Cricketer{ //! parent 1 class
 public:
     int runs;
     int wickets;
@@ -9,13 +9,13 @@ public:
     
 };
 
-class Engineer{ //* child class 
+class Engineer{ //! parent 2 class 
 public:
     int yearsOfExperience;    
     string domain;    
 };
 
-class MultiTalanted: public Cricketer, public Engineer{  //* grandchild class 
+class MultiTalanted: public Cricketer, public Engineer{  //* child class inheriting from both parent classes
 public:
     string name;
     void changename(string newName){
