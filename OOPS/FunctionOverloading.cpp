@@ -15,7 +15,7 @@ public:
     //     return a + b;  // PRODUCE ERROR
     // }
 
-    // int add(float a, float b){
+    // float add(float a, float b){
     //     return a + b;  //  NO ERROR 
     // }
 
