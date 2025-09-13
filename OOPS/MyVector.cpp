@@ -10,20 +10,21 @@ public:
     Vector(){
         size = 0;                                   // INITIALIZATION
         capacity = 1;
-        arr  = new int[capacity]; // an array of size 1
+        arr  = new int[capacity]; //! allocate memory for 1 integer
     }
  
    void add(int element) {
-        if(size==capacity) {
-            capacity *= 2;  // for capacity
-            int* arr2 = new int{capacity}; //  TO make  Vector
+        if(size==capacity) { //* Array is full, need to resize
+            capacity *= 2;  // for capacity -> double the capacity
+            int* arr2 = new int{capacity}; //* Create new larger array
+            //! Copy all existing elements to new array
             for(int i = 0; i<size;i++) {
-                arr2[i] = arr[i];
+                arr2[i] = arr[i];  //* 
             }
             arr = arr2; // *** here the old array becomes same as new one 
         }
-        arr[size] = element; // for size
-        size++;
+        arr[size] = element; // Add new element
+        size++;  // size increment
     }
 
     void print(){       // to print Vector
