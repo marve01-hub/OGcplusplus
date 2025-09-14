@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // ARRAYS
+    int* intArray = new int[5];          // Allocate ARRAY of 5 integers
+    char* charArray = new char[10];      // Allocate ARRAY of 10 characters
+    
+    // Use them
+    intArray[0] = 100;
+    charArray[0] = 'H';
+    
+    // CORRECT cleanup for arrays
+    delete[] intArray;    // Free ARRAY of integers
+    delete[] charArray;   // Free ARRAY of characters
+    
+    return 0;
+}
