@@ -12,7 +12,7 @@ int main(){
 
     // characters
     char ch = 'A';
-    int breakpoint = (2*i+1)/2;
+    int breakpoint = (2*i+1)/2; //! ** after this breakpoint ch start decresing 
     for(int j= 1; j<=2*i+1;j++){
             cout<<ch; 
             if (j<= breakpoint) ch++;
