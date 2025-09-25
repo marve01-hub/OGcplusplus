@@ -10,6 +10,7 @@ int main(){
     dq.push_front(1); // {1,2,4,6,7}
     dq.pop_back(); //* {1,2,4,6} = removes last element
     dq.pop_front(); // {2,4,6}
+    
 
     // rest functions are same as vectors and lists
     // like size(), clear(), swap(), insert(), erase(), begin(), end() etc.
