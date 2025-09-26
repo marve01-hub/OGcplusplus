@@ -10,8 +10,8 @@ int main(){
     st.insert(2); // {1,2,4}
 
     auto it = st.find(5); //! find() -> returns iterator - points to element location
-    cout << *it<<endl; //! Returns 3(st.end()) bcz if element is not present its points towards last 
-    //! position and the 3 givesn is a garbage value bcz 
+    cout << *it<<endl; //! Returns 3(st.end()) bcz if element is not present its points after last 
+    //! element  
 
     /*Set: [1] [2] [4] [end marker]
                       ↑
@@ -32,7 +32,9 @@ int main(){
         st.erase(it1,it2); //returns {1,4,5}
 
   //? UPPER BOUND and LOWER BOUND  
+
       
       
+  
 
 }
