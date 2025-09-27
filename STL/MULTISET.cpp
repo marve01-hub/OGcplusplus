@@ -1,4 +1,4 @@
-//! SET = SORTED(ascending orer ) +  not UNIQUE(stores all values of same element) [takes O(logn) for each function]
+//! MULTISET = SORTED(ascending orer ) +  not UNIQUE(stores all values of same element) [takes O(logn) for each function]
 #include<iostream>
 #include<set>
 using namespace std;
