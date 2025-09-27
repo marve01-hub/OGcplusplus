@@ -33,9 +33,9 @@ int main(){
     //     cout<< it <<" ";
     // }
   // b.> By providing address(iteraor) of element it delets only elemnet at that prticular addess
-   
+   // let {1,1,1,2,3,4}
         auto it1 = m.find(1);
-        auto it2 = m.find(2);
+        auto it2 = next(it1,2); // [include,exclude) goes from 1's iterator to 2nd index(excluded) removes till 1st index
         m.erase(it1,it2); //returns {1,4,5}
      for(auto it : m){
         cout<< it <<" ";
