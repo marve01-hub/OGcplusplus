@@ -1,2 +1,2 @@
-int cnt = st.count(3); // gives 1 if element is there and 0 if no element is there
-//     cout<< cnt; 
+auto it = s.lower_bound(3); //! lower bound usi elements ka iterator if present either us se just biggeer elemnt ka iterator deta hai
+//     cout<< *(it) << endl;
