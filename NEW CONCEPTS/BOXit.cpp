@@ -46,9 +46,9 @@ public:
         else return false;
     }
     //* Below is operator overloading to make your custom class work with cout
-    
-    friend ostream& operator<<(ostream& out, Box& B){ //! "ostream" is a CLASS for output streams like cout** form <iostream>
-        out << B.l << " " <<  B.b << " " << B.h;      //! ostream& = reference to an ostream object
+
+    friend ostream& operator<<(ostream& out, Box& B){ //! "ostream" is a CLASS for output streams like cout** form <iostream> = an inbuilt class
+        out << B.l << " " <<  B.b << " " << B.h;      //! ostream& = reference to an ostream object 
 
         return out;
     }
