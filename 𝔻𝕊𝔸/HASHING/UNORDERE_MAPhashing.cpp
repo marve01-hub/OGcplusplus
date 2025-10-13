@@ -1,5 +1,5 @@
 #include<iostream>
-#include<map>
+#include<unordered_map>
 using namespace std;
 int main(){
     int n;
@@ -10,9 +10,9 @@ int main(){
         cin>>arr[i];
     }
     // precompute
-    map<int,int> mpp;
+    unordered_map<int,int> mpp;
     for(int  i= 0;i<n;i++){
-        mpp[arr[i]] += 1;
+        mpp[arr[i]]++;
     }
 
     int q;
@@ -26,7 +26,4 @@ int main(){
     }
 
 }
-
-
-
 
